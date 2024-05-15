@@ -1,0 +1,85 @@
+# for my patner on how to use the branch and pull method
+---
+
+# Using Branches and Pull Requests on GitHub
+
+To effectively manage your project and collaborate with your team members on GitHub, follow these steps to use branches and pull requests:
+
+## 1. Create a New Branch:
+
+Use the following command to create a new branch for each feature or bug fix you're working on:
+
+```bash
+git checkout -b feature_branch_name
+```
+
+Replace `feature_branch_name` with an appropriate name for your branch, indicating the feature or bug fix you're implementing.
+
+## 2. Make Changes:
+
+Make changes to your code on the new branch. You can add new features, fix bugs, or make improvements to existing code.
+
+## 3. Push Branch to GitHub:
+
+Once you're done making changes, push the branch to your GitHub repository to share your changes with your team members:
+
+```bash
+git push origin feature_branch_name
+```
+
+This command pushes the new branch `feature_branch_name` to your GitHub repository.
+
+## 4. Create a Pull Request:
+
+Go to your GitHub repository's page and navigate to the "Pull Requests" tab. Then, follow these steps:
+
+- Click on the "New pull request" button.
+- Select the base branch (usually `main` or `master`) and the branch containing your changes (`feature_branch_name`).
+- Review the changes and add a description if necessary.
+- Click on the "Create pull request" button to create the pull request.
+
+## 5. Collaborate and Review:
+
+Collaborate with your team members to review and approve the pull request. Discuss any changes, improvements, or concerns related to the code changes.
+Once approved, merge the pull request into the base branch (`main` or `master`) to incorporate your changes into the main codebase.
+
+By using branches and pull requests, you can keep your main codebase clean and organized, collaborate effectively with your team members, and easily track changes and contributions to the project.
+
+---
+
+
+# AirBnB Clone Command Interpreter
+
+## Description
+Welcome to the AirBnB clone project! This command-line interpreter is the first step towards building your first full web application: the AirBnB clone. This project is essential as it sets the foundation for all subsequent projects, including HTML/CSS templating, database storage, API, and front-end integration.
+
+### Project Goals
+- Implement a parent class (BaseModel) to handle initialization, serialization, and deserialization of future instances.
+- Create a flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> File.
+- Define classes for AirBnB objects (User, State, City, Place, etc.) that inherit from BaseModel.
+- Develop the first abstracted storage engine of the project: File storage.
+- Write comprehensive unit tests to validate all classes and the storage engine.
+
+## Command Interpreter
+The command interpreter is a Python script (`console.py`) built using the `cmd` module. It provides a shell for managing AirBnB objects, allowing users to perform various operations such as creating, retrieving, updating, and deleting objects.
+
+### Getting Started
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run the `console.py` script using Python:
+
+#python3 console.py
+
+### Usage
+Once the command interpreter is started, you'll see the prompt `(hbnb)`. Here are some basic commands you can use:
+
+- `help`: Display help information about available commands.
+- `create <class_name>`: Create a new instance of the specified class.
+- `show <class_name> <object_id>`: Display details of a specific instance.
+- `all <class_name>`: Display details of all instances of a specific class.
+- `update <class_name> <object_id> <attribute_name> <attribute_value>`: Update an attribute of a specific instance.
+- `destroy <class_name> <object_id>`: Delete a specific instance.
+
+### Examples
+Here are some examples of how to use the command interpreter:
+- To create a new User:
