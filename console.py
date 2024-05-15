@@ -4,11 +4,12 @@ for building line-oriented command interpreters
 """
 import cmd
 
+#hello world
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "  # Set the prompt for the command line
 
     def emptyline(self):
-        """Do nothing on an empty line."""
+        """Do nothing on an empty line  ."""
         pass
 
     def do_EOF(self, line):
